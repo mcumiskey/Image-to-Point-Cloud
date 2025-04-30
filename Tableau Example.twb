@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.25.0106.1651                               -->
+<workbook original-version='18.1' source-build='2024.2.7 (20242.25.0106.1651)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='tree_colors_pivoted' inline='true' name='federated.0wcnmn7105qtdx10emm9l0qfconh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tree_colors_pivoted' name='textscan.13wpiav1kozitv1gs2hs30zo6l3g'>
+            <connection class='textscan' directory='C:/Users/Miles/Documents/Code/image-to-point-cloud/data' filename='tree_colors_pivoted.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.13wpiav1kozitv1gs2hs30zo6l3g' name='tree_colors_pivoted.csv' table='[tree_colors_pivoted#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Day of Year' ordinal='0' />
+            <column datatype='string' name='Species' ordinal='1' />
+            <column datatype='integer' name='Elevation' ordinal='2' />
+            <column datatype='real' name='Pigment' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.13wpiav1kozitv1gs2hs30zo6l3g' name='tree_colors_pivoted.csv' table='[tree_colors_pivoted#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Day of Year' ordinal='0' />
+            <column datatype='string' name='Species' ordinal='1' />
+            <column datatype='integer' name='Elevation' ordinal='2' />
+            <column datatype='real' name='Pigment' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tree_colors_pivoted.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day of Year</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Day of Year]</local-name>
+            <parent-name>[tree_colors_pivoted.csv]</parent-name>
+            <remote-alias>Day of Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree_colors_pivoted.csv_A21EABA9733D41F199490BF3F6448BCF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Species</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Species]</local-name>
+            <parent-name>[tree_colors_pivoted.csv]</parent-name>
+            <remote-alias>Species</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree_colors_pivoted.csv_A21EABA9733D41F199490BF3F6448BCF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Elevation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Elevation]</local-name>
+            <parent-name>[tree_colors_pivoted.csv]</parent-name>
+            <remote-alias>Elevation</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree_colors_pivoted.csv_A21EABA9733D41F199490BF3F6448BCF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pigment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pigment]</local-name>
+            <parent-name>[tree_colors_pivoted.csv]</parent-name>
+            <remote-alias>Pigment</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree_colors_pivoted.csv_A21EABA9733D41F199490BF3F6448BCF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='COLOR' datatype='boolean' name='[Calculation_1394145562865704960]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='WINDOW_MAX(IF MAX([Pigment]) = WINDOW_MAX(MAX([Pigment])) THEN MAX([Day of Year]) END)&#13;&#10;&#13;&#10;&lt;&#13;&#10;&#13;&#10;MAX([Day of Year])'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='string' name='[Species]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='tree_colors_pivoted.csv' datatype='table' name='[__tableau_internal_object_id__].[tree_colors_pivoted.csv_A21EABA9733D41F199490BF3F6448BCF]' role='measure' type='quantitative' />
+      <column-instance column='[Species]' derivation='None' name='[none:Species:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Species:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;RMP&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;WB&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;WA&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SM&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;YB&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;RMS&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='tree_colors_pivoted.csv' id='tree_colors_pivoted.csv_A21EABA9733D41F199490BF3F6448BCF'>
+            <properties context=''>
+              <relation connection='textscan.13wpiav1kozitv1gs2hs30zo6l3g' name='tree_colors_pivoted.csv' table='[tree_colors_pivoted#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Day of Year' ordinal='0' />
+                  <column datatype='string' name='Species' ordinal='1' />
+                  <column datatype='integer' name='Elevation' ordinal='2' />
+                  <column datatype='real' name='Pigment' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tree_colors_pivoted' name='federated.0wcnmn7105qtdx10emm9l0qfconh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wcnmn7105qtdx10emm9l0qfconh'>
+            <column caption='COLOR' datatype='boolean' name='[Calculation_1394145562865704960]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='WINDOW_MAX(IF MAX([Pigment]) = WINDOW_MAX(MAX([Pigment])) THEN MAX([Day of Year]) END)&#13;&#10;&#13;&#10;&lt;&#13;&#10;&#13;&#10;MAX([Day of Year])'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='date' name='[Day of Year]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Pigment]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Species]' role='dimension' type='nominal' />
+            <column-instance column='[Pigment]' derivation='None' name='[none:Pigment:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Species]' derivation='None' name='[none:Species:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Day of Year]' derivation='Day-Trunc' name='[tdy:Day of Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1394145562865704960]' derivation='User' name='[usr:Calculation_1394145562865704960:nk:1]' pivot='key' type='nominal'>
+              <table-calc ordering-type='Field'>
+                <order field='[federated.0wcnmn7105qtdx10emm9l0qfconh].[tdy:Day of Year:qk]' />
+                <order field='[federated.0wcnmn7105qtdx10emm9l0qfconh].[Pigment]' />
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Day of Year]' derivation='Year' name='[yr:Day of Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0wcnmn7105qtdx10emm9l0qfconh].[none:Species:nk]'>
+            <groupfilter function='member' level='[none:Species:nk]' member='&quot;WA&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0wcnmn7105qtdx10emm9l0qfconh].[yr:Day of Year:ok]'>
+            <groupfilter function='member' level='[yr:Day of Year:ok]' member='2006' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0wcnmn7105qtdx10emm9l0qfconh].[yr:Day of Year:ok]</column>
+            <column>[federated.0wcnmn7105qtdx10emm9l0qfconh].[none:Species:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0wcnmn7105qtdx10emm9l0qfconh].[usr:Calculation_1394145562865704960:nk:1]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0wcnmn7105qtdx10emm9l0qfconh].[none:Pigment:qk]</rows>
+        <cols>[federated.0wcnmn7105qtdx10emm9l0qfconh].[tdy:Day of Year:qk]</cols>
+      </table>
+      <simple-id uuid='{C09B8ADC-6D0E-4651-B43A-4A6B091A3430}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[federated.0wcnmn7105qtdx10emm9l0qfconh].[yr:Day of Year:ok]' type='filter' />
+            <card pane-specification-id='1' param='[federated.0wcnmn7105qtdx10emm9l0qfconh].[usr:Calculation_1394145562865704960:nk:1]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0wcnmn7105qtdx10emm9l0qfconh].[attr:Elevation:qk]</field>
+            <field>[federated.0wcnmn7105qtdx10emm9l0qfconh].[none:Species:nk]</field>
+            <field>[federated.0wcnmn7105qtdx10emm9l0qfconh].[usr:Calculation_1394145562865704960:nk:1]</field>
+            <field>[federated.0wcnmn7105qtdx10emm9l0qfconh].[yr:Day of Year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8B6BD044-C52C-45EE-8E22-BA2D15B5BB7B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

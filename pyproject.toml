@@ -1,0 +1,23 @@
+[project]
+name = "image-to-point-cloud"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas (>=2.2.3,<3.0.0)",
+    "plotly (>=6.0.1,<7.0.0)",
+    "pillow (>=11.2.1,<12.0.0)",
+    "notebook (>=7.4.1,<8.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "image_to_point_cloud", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
